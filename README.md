@@ -1,10 +1,19 @@
 Node Boilerplate (express.js + passport.js + sequelize)
 -------------------------------------------------------
 
-This is a handy jump start on for node.js web applications that are going to 
+This is a handy jump start for node.js web applications that are going to 
 use a SQL database (sequelize) and user authentication (passport).
 
 ## Usage
+
+### Installation
+
+1. Clone the repository `git clone git@github.com:justin-schroeder/express-boilerplate.git`
+2. Install dependencies `cd express-boilerplate && npm install`
+3. Create a new database, then edit the database configuration file: `config/config.json`
+4. Edit application config (at least change the salt): `config/default.json`
+5. Perform database migration: `sequelize db:migrate`
+6. Run! `npm start`. I highly recommend using [nodemon](http://nodemon.io/) in development
 
 ### Authentication
 

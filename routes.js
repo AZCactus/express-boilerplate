@@ -29,7 +29,7 @@ router.all('/admin\/?*', auth.restrict('is_admin'));
  */
 
 /* GET home page. */
-router.get('/', c.ProjectController.index);
+router.get('/', (req, res) => {res.redirect("/admin")});
 
 /* GET login. */
 router.get('/login', c.AuthenticationController.login);
