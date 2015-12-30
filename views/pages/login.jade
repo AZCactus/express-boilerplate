@@ -1,0 +1,12 @@
+extends ../templates/public.jade
+
+block content
+  form(action="/login", method="post")
+    .form-element
+      label(for="username") Email Address
+      input#username(type="text",name="username",placeholder="Your Email")
+    .form-element
+      label(for="password") Password
+      input#password(type="password",name="password",placeholder="Enter your password")
+    .form-element
+      button(type="submit") Login

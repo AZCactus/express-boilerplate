@@ -1,0 +1,12 @@
+{
+    "port": 3000,
+    "salt": "your-long-and-obnoxious-salt-here",
+    "session": {
+        "path": "/tmp/sessions",
+        "useAsync": true
+    },
+    "messages": {
+        "not_authorized": "Sorry, you don't have permission to access that feature",
+        "unauthenticated": "You must login to access that feature"
+    }
+}

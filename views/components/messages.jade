@@ -1,0 +1,5 @@
+if (messages)
+  each group, status in messages
+    ul.message-list(class="messages-#{status}")
+      each message in group
+        li=message      
